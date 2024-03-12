@@ -1,0 +1,1830 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
+| Date         : Tue Mar 12 17:46:26 2024
+| Host         : archlinux running 64-bit unknown
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file z1top_counter_alinx_timing_summary_routed.rpt -pb z1top_counter_alinx_timing_summary_routed.pb -rpx z1top_counter_alinx_timing_summary_routed.rpx -warn_on_violation
+| Design       : z1top_counter_alinx
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity  Description                    Violations  
+---------  --------  -----------------------------  ----------  
+TIMING-18  Warning   Missing input or output delay  4           
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (4)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (4)
+-------------------------------
+ There are 4 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      3.465        0.000                      0                  136        0.089        0.000                      0                  136        3.500        0.000                       0                    69  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock            Waveform(ns)         Period(ns)      Frequency(MHz)
+-----            ------------         ----------      --------------
+CLK_125MHZ_FPGA  {0.000 4.000}        8.000           125.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+CLK_125MHZ_FPGA        3.465        0.000                      0                  136        0.089        0.000                      0                  136        3.500        0.000                       0                    69  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group       From Clock       To Clock       
+----------       ----------       --------       
+(none)           CLK_125MHZ_FPGA                   
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  CLK_125MHZ_FPGA
+  To Clock:  CLK_125MHZ_FPGA
+
+Setup :            0  Failing Endpoints,  Worst Slack        3.465ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.089ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             3.465ns  (required time - arrival time)
+  Source:                 clk_counter_reg/q_reg[37]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[0]/R
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (CLK_125MHZ_FPGA rise@8.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        3.757ns  (logic 0.748ns (19.908%)  route 3.009ns (80.092%))
+  Logic Levels:           3  (LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.319ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.557ns = ( 12.557 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.133ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.429     1.429 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.302    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     3.387 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.746     5.133    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y102       FDRE                                         r  clk_counter_reg/q_reg[37]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y102       FDRE (Prop_fdre_C_Q)         0.433     5.566 f  clk_counter_reg/q_reg[37]/Q
+                         net (fo=2, routed)           0.949     6.515    clk_counter_reg/q_reg[37]
+    SLICE_X113Y102       LUT6 (Prop_lut6_I1_O)        0.105     6.620 r  clk_counter_reg/q[0]_i_10/O
+                         net (fo=1, routed)           0.777     7.398    clk_counter_reg/q[0]_i_10_n_0
+    SLICE_X113Y102       LUT6 (Prop_lut6_I0_O)        0.105     7.503 r  clk_counter_reg/q[0]_i_6/O
+                         net (fo=1, routed)           0.489     7.991    clk_counter_reg/q[0]_i_6_n_0
+    SLICE_X113Y103       LUT4 (Prop_lut4_I3_O)        0.105     8.096 r  clk_counter_reg/q[0]_i_1/O
+                         net (fo=68, routed)          0.794     8.891    clk_counter_reg/E[0]
+    SLICE_X112Y93        FDRE                                         r  clk_counter_reg/q_reg[0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      8.000     8.000 r  
+    U18                                               0.000     8.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     8.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.363     9.363 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.701    11.064    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    11.141 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.415    12.557    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y93        FDRE                                         r  clk_counter_reg/q_reg[0]/C
+                         clock pessimism              0.258    12.814    
+                         clock uncertainty           -0.035    12.779    
+    SLICE_X112Y93        FDRE (Setup_fdre_C_R)       -0.423    12.356    clk_counter_reg/q_reg[0]
+  -------------------------------------------------------------------
+                         required time                         12.356    
+                         arrival time                          -8.891    
+  -------------------------------------------------------------------
+                         slack                                  3.465    
+
+Slack (MET) :             3.465ns  (required time - arrival time)
+  Source:                 clk_counter_reg/q_reg[37]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[1]/R
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (CLK_125MHZ_FPGA rise@8.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        3.757ns  (logic 0.748ns (19.908%)  route 3.009ns (80.092%))
+  Logic Levels:           3  (LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.319ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.557ns = ( 12.557 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.133ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.429     1.429 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.302    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     3.387 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.746     5.133    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y102       FDRE                                         r  clk_counter_reg/q_reg[37]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y102       FDRE (Prop_fdre_C_Q)         0.433     5.566 f  clk_counter_reg/q_reg[37]/Q
+                         net (fo=2, routed)           0.949     6.515    clk_counter_reg/q_reg[37]
+    SLICE_X113Y102       LUT6 (Prop_lut6_I1_O)        0.105     6.620 r  clk_counter_reg/q[0]_i_10/O
+                         net (fo=1, routed)           0.777     7.398    clk_counter_reg/q[0]_i_10_n_0
+    SLICE_X113Y102       LUT6 (Prop_lut6_I0_O)        0.105     7.503 r  clk_counter_reg/q[0]_i_6/O
+                         net (fo=1, routed)           0.489     7.991    clk_counter_reg/q[0]_i_6_n_0
+    SLICE_X113Y103       LUT4 (Prop_lut4_I3_O)        0.105     8.096 r  clk_counter_reg/q[0]_i_1/O
+                         net (fo=68, routed)          0.794     8.891    clk_counter_reg/E[0]
+    SLICE_X112Y93        FDRE                                         r  clk_counter_reg/q_reg[1]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      8.000     8.000 r  
+    U18                                               0.000     8.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     8.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.363     9.363 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.701    11.064    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    11.141 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.415    12.557    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y93        FDRE                                         r  clk_counter_reg/q_reg[1]/C
+                         clock pessimism              0.258    12.814    
+                         clock uncertainty           -0.035    12.779    
+    SLICE_X112Y93        FDRE (Setup_fdre_C_R)       -0.423    12.356    clk_counter_reg/q_reg[1]
+  -------------------------------------------------------------------
+                         required time                         12.356    
+                         arrival time                          -8.891    
+  -------------------------------------------------------------------
+                         slack                                  3.465    
+
+Slack (MET) :             3.465ns  (required time - arrival time)
+  Source:                 clk_counter_reg/q_reg[37]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[2]/R
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (CLK_125MHZ_FPGA rise@8.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        3.757ns  (logic 0.748ns (19.908%)  route 3.009ns (80.092%))
+  Logic Levels:           3  (LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.319ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.557ns = ( 12.557 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.133ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.429     1.429 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.302    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     3.387 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.746     5.133    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y102       FDRE                                         r  clk_counter_reg/q_reg[37]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y102       FDRE (Prop_fdre_C_Q)         0.433     5.566 f  clk_counter_reg/q_reg[37]/Q
+                         net (fo=2, routed)           0.949     6.515    clk_counter_reg/q_reg[37]
+    SLICE_X113Y102       LUT6 (Prop_lut6_I1_O)        0.105     6.620 r  clk_counter_reg/q[0]_i_10/O
+                         net (fo=1, routed)           0.777     7.398    clk_counter_reg/q[0]_i_10_n_0
+    SLICE_X113Y102       LUT6 (Prop_lut6_I0_O)        0.105     7.503 r  clk_counter_reg/q[0]_i_6/O
+                         net (fo=1, routed)           0.489     7.991    clk_counter_reg/q[0]_i_6_n_0
+    SLICE_X113Y103       LUT4 (Prop_lut4_I3_O)        0.105     8.096 r  clk_counter_reg/q[0]_i_1/O
+                         net (fo=68, routed)          0.794     8.891    clk_counter_reg/E[0]
+    SLICE_X112Y93        FDRE                                         r  clk_counter_reg/q_reg[2]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      8.000     8.000 r  
+    U18                                               0.000     8.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     8.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.363     9.363 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.701    11.064    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    11.141 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.415    12.557    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y93        FDRE                                         r  clk_counter_reg/q_reg[2]/C
+                         clock pessimism              0.258    12.814    
+                         clock uncertainty           -0.035    12.779    
+    SLICE_X112Y93        FDRE (Setup_fdre_C_R)       -0.423    12.356    clk_counter_reg/q_reg[2]
+  -------------------------------------------------------------------
+                         required time                         12.356    
+                         arrival time                          -8.891    
+  -------------------------------------------------------------------
+                         slack                                  3.465    
+
+Slack (MET) :             3.465ns  (required time - arrival time)
+  Source:                 clk_counter_reg/q_reg[37]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[3]/R
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (CLK_125MHZ_FPGA rise@8.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        3.757ns  (logic 0.748ns (19.908%)  route 3.009ns (80.092%))
+  Logic Levels:           3  (LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.319ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.557ns = ( 12.557 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.133ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.429     1.429 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.302    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     3.387 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.746     5.133    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y102       FDRE                                         r  clk_counter_reg/q_reg[37]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y102       FDRE (Prop_fdre_C_Q)         0.433     5.566 f  clk_counter_reg/q_reg[37]/Q
+                         net (fo=2, routed)           0.949     6.515    clk_counter_reg/q_reg[37]
+    SLICE_X113Y102       LUT6 (Prop_lut6_I1_O)        0.105     6.620 r  clk_counter_reg/q[0]_i_10/O
+                         net (fo=1, routed)           0.777     7.398    clk_counter_reg/q[0]_i_10_n_0
+    SLICE_X113Y102       LUT6 (Prop_lut6_I0_O)        0.105     7.503 r  clk_counter_reg/q[0]_i_6/O
+                         net (fo=1, routed)           0.489     7.991    clk_counter_reg/q[0]_i_6_n_0
+    SLICE_X113Y103       LUT4 (Prop_lut4_I3_O)        0.105     8.096 r  clk_counter_reg/q[0]_i_1/O
+                         net (fo=68, routed)          0.794     8.891    clk_counter_reg/E[0]
+    SLICE_X112Y93        FDRE                                         r  clk_counter_reg/q_reg[3]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      8.000     8.000 r  
+    U18                                               0.000     8.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     8.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.363     9.363 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.701    11.064    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    11.141 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.415    12.557    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y93        FDRE                                         r  clk_counter_reg/q_reg[3]/C
+                         clock pessimism              0.258    12.814    
+                         clock uncertainty           -0.035    12.779    
+    SLICE_X112Y93        FDRE (Setup_fdre_C_R)       -0.423    12.356    clk_counter_reg/q_reg[3]
+  -------------------------------------------------------------------
+                         required time                         12.356    
+                         arrival time                          -8.891    
+  -------------------------------------------------------------------
+                         slack                                  3.465    
+
+Slack (MET) :             3.498ns  (required time - arrival time)
+  Source:                 clk_counter_reg/q_reg[37]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[4]/R
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (CLK_125MHZ_FPGA rise@8.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        3.725ns  (logic 0.748ns (20.082%)  route 2.977ns (79.918%))
+  Logic Levels:           3  (LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.319ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.557ns = ( 12.557 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.133ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.429     1.429 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.302    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     3.387 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.746     5.133    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y102       FDRE                                         r  clk_counter_reg/q_reg[37]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y102       FDRE (Prop_fdre_C_Q)         0.433     5.566 f  clk_counter_reg/q_reg[37]/Q
+                         net (fo=2, routed)           0.949     6.515    clk_counter_reg/q_reg[37]
+    SLICE_X113Y102       LUT6 (Prop_lut6_I1_O)        0.105     6.620 r  clk_counter_reg/q[0]_i_10/O
+                         net (fo=1, routed)           0.777     7.398    clk_counter_reg/q[0]_i_10_n_0
+    SLICE_X113Y102       LUT6 (Prop_lut6_I0_O)        0.105     7.503 r  clk_counter_reg/q[0]_i_6/O
+                         net (fo=1, routed)           0.489     7.991    clk_counter_reg/q[0]_i_6_n_0
+    SLICE_X113Y103       LUT4 (Prop_lut4_I3_O)        0.105     8.096 r  clk_counter_reg/q[0]_i_1/O
+                         net (fo=68, routed)          0.762     8.858    clk_counter_reg/E[0]
+    SLICE_X112Y94        FDRE                                         r  clk_counter_reg/q_reg[4]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      8.000     8.000 r  
+    U18                                               0.000     8.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     8.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.363     9.363 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.701    11.064    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    11.141 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.415    12.557    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y94        FDRE                                         r  clk_counter_reg/q_reg[4]/C
+                         clock pessimism              0.258    12.814    
+                         clock uncertainty           -0.035    12.779    
+    SLICE_X112Y94        FDRE (Setup_fdre_C_R)       -0.423    12.356    clk_counter_reg/q_reg[4]
+  -------------------------------------------------------------------
+                         required time                         12.356    
+                         arrival time                          -8.858    
+  -------------------------------------------------------------------
+                         slack                                  3.498    
+
+Slack (MET) :             3.498ns  (required time - arrival time)
+  Source:                 clk_counter_reg/q_reg[37]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[5]/R
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (CLK_125MHZ_FPGA rise@8.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        3.725ns  (logic 0.748ns (20.082%)  route 2.977ns (79.918%))
+  Logic Levels:           3  (LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.319ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.557ns = ( 12.557 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.133ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.429     1.429 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.302    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     3.387 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.746     5.133    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y102       FDRE                                         r  clk_counter_reg/q_reg[37]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y102       FDRE (Prop_fdre_C_Q)         0.433     5.566 f  clk_counter_reg/q_reg[37]/Q
+                         net (fo=2, routed)           0.949     6.515    clk_counter_reg/q_reg[37]
+    SLICE_X113Y102       LUT6 (Prop_lut6_I1_O)        0.105     6.620 r  clk_counter_reg/q[0]_i_10/O
+                         net (fo=1, routed)           0.777     7.398    clk_counter_reg/q[0]_i_10_n_0
+    SLICE_X113Y102       LUT6 (Prop_lut6_I0_O)        0.105     7.503 r  clk_counter_reg/q[0]_i_6/O
+                         net (fo=1, routed)           0.489     7.991    clk_counter_reg/q[0]_i_6_n_0
+    SLICE_X113Y103       LUT4 (Prop_lut4_I3_O)        0.105     8.096 r  clk_counter_reg/q[0]_i_1/O
+                         net (fo=68, routed)          0.762     8.858    clk_counter_reg/E[0]
+    SLICE_X112Y94        FDRE                                         r  clk_counter_reg/q_reg[5]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      8.000     8.000 r  
+    U18                                               0.000     8.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     8.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.363     9.363 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.701    11.064    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    11.141 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.415    12.557    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y94        FDRE                                         r  clk_counter_reg/q_reg[5]/C
+                         clock pessimism              0.258    12.814    
+                         clock uncertainty           -0.035    12.779    
+    SLICE_X112Y94        FDRE (Setup_fdre_C_R)       -0.423    12.356    clk_counter_reg/q_reg[5]
+  -------------------------------------------------------------------
+                         required time                         12.356    
+                         arrival time                          -8.858    
+  -------------------------------------------------------------------
+                         slack                                  3.498    
+
+Slack (MET) :             3.498ns  (required time - arrival time)
+  Source:                 clk_counter_reg/q_reg[37]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[6]/R
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (CLK_125MHZ_FPGA rise@8.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        3.725ns  (logic 0.748ns (20.082%)  route 2.977ns (79.918%))
+  Logic Levels:           3  (LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.319ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.557ns = ( 12.557 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.133ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.429     1.429 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.302    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     3.387 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.746     5.133    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y102       FDRE                                         r  clk_counter_reg/q_reg[37]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y102       FDRE (Prop_fdre_C_Q)         0.433     5.566 f  clk_counter_reg/q_reg[37]/Q
+                         net (fo=2, routed)           0.949     6.515    clk_counter_reg/q_reg[37]
+    SLICE_X113Y102       LUT6 (Prop_lut6_I1_O)        0.105     6.620 r  clk_counter_reg/q[0]_i_10/O
+                         net (fo=1, routed)           0.777     7.398    clk_counter_reg/q[0]_i_10_n_0
+    SLICE_X113Y102       LUT6 (Prop_lut6_I0_O)        0.105     7.503 r  clk_counter_reg/q[0]_i_6/O
+                         net (fo=1, routed)           0.489     7.991    clk_counter_reg/q[0]_i_6_n_0
+    SLICE_X113Y103       LUT4 (Prop_lut4_I3_O)        0.105     8.096 r  clk_counter_reg/q[0]_i_1/O
+                         net (fo=68, routed)          0.762     8.858    clk_counter_reg/E[0]
+    SLICE_X112Y94        FDRE                                         r  clk_counter_reg/q_reg[6]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      8.000     8.000 r  
+    U18                                               0.000     8.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     8.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.363     9.363 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.701    11.064    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    11.141 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.415    12.557    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y94        FDRE                                         r  clk_counter_reg/q_reg[6]/C
+                         clock pessimism              0.258    12.814    
+                         clock uncertainty           -0.035    12.779    
+    SLICE_X112Y94        FDRE (Setup_fdre_C_R)       -0.423    12.356    clk_counter_reg/q_reg[6]
+  -------------------------------------------------------------------
+                         required time                         12.356    
+                         arrival time                          -8.858    
+  -------------------------------------------------------------------
+                         slack                                  3.498    
+
+Slack (MET) :             3.498ns  (required time - arrival time)
+  Source:                 clk_counter_reg/q_reg[37]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[7]/R
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (CLK_125MHZ_FPGA rise@8.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        3.725ns  (logic 0.748ns (20.082%)  route 2.977ns (79.918%))
+  Logic Levels:           3  (LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.319ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.557ns = ( 12.557 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.133ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.429     1.429 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.302    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     3.387 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.746     5.133    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y102       FDRE                                         r  clk_counter_reg/q_reg[37]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y102       FDRE (Prop_fdre_C_Q)         0.433     5.566 f  clk_counter_reg/q_reg[37]/Q
+                         net (fo=2, routed)           0.949     6.515    clk_counter_reg/q_reg[37]
+    SLICE_X113Y102       LUT6 (Prop_lut6_I1_O)        0.105     6.620 r  clk_counter_reg/q[0]_i_10/O
+                         net (fo=1, routed)           0.777     7.398    clk_counter_reg/q[0]_i_10_n_0
+    SLICE_X113Y102       LUT6 (Prop_lut6_I0_O)        0.105     7.503 r  clk_counter_reg/q[0]_i_6/O
+                         net (fo=1, routed)           0.489     7.991    clk_counter_reg/q[0]_i_6_n_0
+    SLICE_X113Y103       LUT4 (Prop_lut4_I3_O)        0.105     8.096 r  clk_counter_reg/q[0]_i_1/O
+                         net (fo=68, routed)          0.762     8.858    clk_counter_reg/E[0]
+    SLICE_X112Y94        FDRE                                         r  clk_counter_reg/q_reg[7]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      8.000     8.000 r  
+    U18                                               0.000     8.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     8.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.363     9.363 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.701    11.064    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    11.141 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.415    12.557    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y94        FDRE                                         r  clk_counter_reg/q_reg[7]/C
+                         clock pessimism              0.258    12.814    
+                         clock uncertainty           -0.035    12.779    
+    SLICE_X112Y94        FDRE (Setup_fdre_C_R)       -0.423    12.356    clk_counter_reg/q_reg[7]
+  -------------------------------------------------------------------
+                         required time                         12.356    
+                         arrival time                          -8.858    
+  -------------------------------------------------------------------
+                         slack                                  3.498    
+
+Slack (MET) :             3.593ns  (required time - arrival time)
+  Source:                 clk_counter_reg/q_reg[37]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[10]/R
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (CLK_125MHZ_FPGA rise@8.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        3.630ns  (logic 0.748ns (20.605%)  route 2.882ns (79.395%))
+  Logic Levels:           3  (LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.319ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.557ns = ( 12.557 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.133ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.429     1.429 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.302    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     3.387 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.746     5.133    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y102       FDRE                                         r  clk_counter_reg/q_reg[37]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y102       FDRE (Prop_fdre_C_Q)         0.433     5.566 f  clk_counter_reg/q_reg[37]/Q
+                         net (fo=2, routed)           0.949     6.515    clk_counter_reg/q_reg[37]
+    SLICE_X113Y102       LUT6 (Prop_lut6_I1_O)        0.105     6.620 r  clk_counter_reg/q[0]_i_10/O
+                         net (fo=1, routed)           0.777     7.398    clk_counter_reg/q[0]_i_10_n_0
+    SLICE_X113Y102       LUT6 (Prop_lut6_I0_O)        0.105     7.503 r  clk_counter_reg/q[0]_i_6/O
+                         net (fo=1, routed)           0.489     7.991    clk_counter_reg/q[0]_i_6_n_0
+    SLICE_X113Y103       LUT4 (Prop_lut4_I3_O)        0.105     8.096 r  clk_counter_reg/q[0]_i_1/O
+                         net (fo=68, routed)          0.667     8.764    clk_counter_reg/E[0]
+    SLICE_X112Y95        FDRE                                         r  clk_counter_reg/q_reg[10]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      8.000     8.000 r  
+    U18                                               0.000     8.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     8.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.363     9.363 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.701    11.064    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    11.141 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.415    12.557    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y95        FDRE                                         r  clk_counter_reg/q_reg[10]/C
+                         clock pessimism              0.258    12.814    
+                         clock uncertainty           -0.035    12.779    
+    SLICE_X112Y95        FDRE (Setup_fdre_C_R)       -0.423    12.356    clk_counter_reg/q_reg[10]
+  -------------------------------------------------------------------
+                         required time                         12.356    
+                         arrival time                          -8.764    
+  -------------------------------------------------------------------
+                         slack                                  3.593    
+
+Slack (MET) :             3.593ns  (required time - arrival time)
+  Source:                 clk_counter_reg/q_reg[37]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[11]/R
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (CLK_125MHZ_FPGA rise@8.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        3.630ns  (logic 0.748ns (20.605%)  route 2.882ns (79.395%))
+  Logic Levels:           3  (LUT4=1 LUT6=2)
+  Clock Path Skew:        -0.319ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.557ns = ( 12.557 - 8.000 ) 
+    Source Clock Delay      (SCD):    5.133ns
+    Clock Pessimism Removal (CPR):    0.258ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.429     1.429 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.302    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     3.387 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.746     5.133    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y102       FDRE                                         r  clk_counter_reg/q_reg[37]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y102       FDRE (Prop_fdre_C_Q)         0.433     5.566 f  clk_counter_reg/q_reg[37]/Q
+                         net (fo=2, routed)           0.949     6.515    clk_counter_reg/q_reg[37]
+    SLICE_X113Y102       LUT6 (Prop_lut6_I1_O)        0.105     6.620 r  clk_counter_reg/q[0]_i_10/O
+                         net (fo=1, routed)           0.777     7.398    clk_counter_reg/q[0]_i_10_n_0
+    SLICE_X113Y102       LUT6 (Prop_lut6_I0_O)        0.105     7.503 r  clk_counter_reg/q[0]_i_6/O
+                         net (fo=1, routed)           0.489     7.991    clk_counter_reg/q[0]_i_6_n_0
+    SLICE_X113Y103       LUT4 (Prop_lut4_I3_O)        0.105     8.096 r  clk_counter_reg/q[0]_i_1/O
+                         net (fo=68, routed)          0.667     8.764    clk_counter_reg/E[0]
+    SLICE_X112Y95        FDRE                                         r  clk_counter_reg/q_reg[11]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      8.000     8.000 r  
+    U18                                               0.000     8.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     8.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.363     9.363 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.701    11.064    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.077    11.141 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.415    12.557    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y95        FDRE                                         r  clk_counter_reg/q_reg[11]/C
+                         clock pessimism              0.258    12.814    
+                         clock uncertainty           -0.035    12.779    
+    SLICE_X112Y95        FDRE (Setup_fdre_C_R)       -0.423    12.356    clk_counter_reg/q_reg[11]
+  -------------------------------------------------------------------
+                         required time                         12.356    
+                         arrival time                          -8.764    
+  -------------------------------------------------------------------
+                         slack                                  3.593    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.089ns  (arrival time - required time)
+  Source:                 clk_counter_reg/q_reg[18]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[28]/D
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK_125MHZ_FPGA rise@0.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        0.576ns  (logic 0.453ns (78.614%)  route 0.123ns (21.386%))
+  Logic Levels:           4  (CARRY4=4)
+  Clock Path Skew:        0.353ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.209ns
+    Source Clock Delay      (SCD):    1.603ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.966 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.637     1.603    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y97        FDRE                                         r  clk_counter_reg/q_reg[18]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y97        FDRE (Prop_fdre_C_Q)         0.164     1.767 r  clk_counter_reg/q_reg[18]/Q
+                         net (fo=2, routed)           0.123     1.889    clk_counter_reg/q_reg[18]
+    SLICE_X112Y97        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.156     2.045 r  clk_counter_reg/q_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.045    clk_counter_reg/q_reg[16]_i_1_n_0
+    SLICE_X112Y98        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.085 r  clk_counter_reg/q_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.085    clk_counter_reg/q_reg[20]_i_1_n_0
+    SLICE_X112Y99        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.125 r  clk_counter_reg/q_reg[24]_i_1/CO[3]
+                         net (fo=1, routed)           0.001     2.126    clk_counter_reg/q_reg[24]_i_1_n_0
+    SLICE_X112Y100       CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.053     2.179 r  clk_counter_reg/q_reg[28]_i_1/O[0]
+                         net (fo=1, routed)           0.000     2.179    clk_counter_reg/q_reg[28]_i_1_n_7
+    SLICE_X112Y100       FDRE                                         r  clk_counter_reg/q_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.454     0.454 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.731     1.185    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.214 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.995     2.209    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y100       FDRE                                         r  clk_counter_reg/q_reg[28]/C
+                         clock pessimism             -0.253     1.956    
+    SLICE_X112Y100       FDRE (Hold_fdre_C_D)         0.134     2.090    clk_counter_reg/q_reg[28]
+  -------------------------------------------------------------------
+                         required time                         -2.090    
+                         arrival time                           2.179    
+  -------------------------------------------------------------------
+                         slack                                  0.089    
+
+Slack (MET) :             0.102ns  (arrival time - required time)
+  Source:                 clk_counter_reg/q_reg[18]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[30]/D
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK_125MHZ_FPGA rise@0.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        0.589ns  (logic 0.466ns (79.086%)  route 0.123ns (20.914%))
+  Logic Levels:           4  (CARRY4=4)
+  Clock Path Skew:        0.353ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.209ns
+    Source Clock Delay      (SCD):    1.603ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.966 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.637     1.603    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y97        FDRE                                         r  clk_counter_reg/q_reg[18]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y97        FDRE (Prop_fdre_C_Q)         0.164     1.767 r  clk_counter_reg/q_reg[18]/Q
+                         net (fo=2, routed)           0.123     1.889    clk_counter_reg/q_reg[18]
+    SLICE_X112Y97        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.156     2.045 r  clk_counter_reg/q_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.045    clk_counter_reg/q_reg[16]_i_1_n_0
+    SLICE_X112Y98        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.085 r  clk_counter_reg/q_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.085    clk_counter_reg/q_reg[20]_i_1_n_0
+    SLICE_X112Y99        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.125 r  clk_counter_reg/q_reg[24]_i_1/CO[3]
+                         net (fo=1, routed)           0.001     2.126    clk_counter_reg/q_reg[24]_i_1_n_0
+    SLICE_X112Y100       CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.066     2.192 r  clk_counter_reg/q_reg[28]_i_1/O[2]
+                         net (fo=1, routed)           0.000     2.192    clk_counter_reg/q_reg[28]_i_1_n_5
+    SLICE_X112Y100       FDRE                                         r  clk_counter_reg/q_reg[30]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.454     0.454 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.731     1.185    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.214 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.995     2.209    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y100       FDRE                                         r  clk_counter_reg/q_reg[30]/C
+                         clock pessimism             -0.253     1.956    
+    SLICE_X112Y100       FDRE (Hold_fdre_C_D)         0.134     2.090    clk_counter_reg/q_reg[30]
+  -------------------------------------------------------------------
+                         required time                         -2.090    
+                         arrival time                           2.192    
+  -------------------------------------------------------------------
+                         slack                                  0.102    
+
+Slack (MET) :             0.125ns  (arrival time - required time)
+  Source:                 clk_counter_reg/q_reg[18]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[29]/D
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK_125MHZ_FPGA rise@0.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        0.612ns  (logic 0.489ns (79.872%)  route 0.123ns (20.128%))
+  Logic Levels:           4  (CARRY4=4)
+  Clock Path Skew:        0.353ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.209ns
+    Source Clock Delay      (SCD):    1.603ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.966 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.637     1.603    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y97        FDRE                                         r  clk_counter_reg/q_reg[18]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y97        FDRE (Prop_fdre_C_Q)         0.164     1.767 r  clk_counter_reg/q_reg[18]/Q
+                         net (fo=2, routed)           0.123     1.889    clk_counter_reg/q_reg[18]
+    SLICE_X112Y97        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.156     2.045 r  clk_counter_reg/q_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.045    clk_counter_reg/q_reg[16]_i_1_n_0
+    SLICE_X112Y98        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.085 r  clk_counter_reg/q_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.085    clk_counter_reg/q_reg[20]_i_1_n_0
+    SLICE_X112Y99        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.125 r  clk_counter_reg/q_reg[24]_i_1/CO[3]
+                         net (fo=1, routed)           0.001     2.126    clk_counter_reg/q_reg[24]_i_1_n_0
+    SLICE_X112Y100       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.089     2.215 r  clk_counter_reg/q_reg[28]_i_1/O[1]
+                         net (fo=1, routed)           0.000     2.215    clk_counter_reg/q_reg[28]_i_1_n_6
+    SLICE_X112Y100       FDRE                                         r  clk_counter_reg/q_reg[29]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.454     0.454 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.731     1.185    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.214 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.995     2.209    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y100       FDRE                                         r  clk_counter_reg/q_reg[29]/C
+                         clock pessimism             -0.253     1.956    
+    SLICE_X112Y100       FDRE (Hold_fdre_C_D)         0.134     2.090    clk_counter_reg/q_reg[29]
+  -------------------------------------------------------------------
+                         required time                         -2.090    
+                         arrival time                           2.215    
+  -------------------------------------------------------------------
+                         slack                                  0.125    
+
+Slack (MET) :             0.127ns  (arrival time - required time)
+  Source:                 clk_counter_reg/q_reg[18]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK_125MHZ_FPGA rise@0.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        0.614ns  (logic 0.491ns (79.937%)  route 0.123ns (20.063%))
+  Logic Levels:           4  (CARRY4=4)
+  Clock Path Skew:        0.353ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.209ns
+    Source Clock Delay      (SCD):    1.603ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.966 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.637     1.603    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y97        FDRE                                         r  clk_counter_reg/q_reg[18]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y97        FDRE (Prop_fdre_C_Q)         0.164     1.767 r  clk_counter_reg/q_reg[18]/Q
+                         net (fo=2, routed)           0.123     1.889    clk_counter_reg/q_reg[18]
+    SLICE_X112Y97        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.156     2.045 r  clk_counter_reg/q_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.045    clk_counter_reg/q_reg[16]_i_1_n_0
+    SLICE_X112Y98        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.085 r  clk_counter_reg/q_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.085    clk_counter_reg/q_reg[20]_i_1_n_0
+    SLICE_X112Y99        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.125 r  clk_counter_reg/q_reg[24]_i_1/CO[3]
+                         net (fo=1, routed)           0.001     2.126    clk_counter_reg/q_reg[24]_i_1_n_0
+    SLICE_X112Y100       CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.091     2.217 r  clk_counter_reg/q_reg[28]_i_1/O[3]
+                         net (fo=1, routed)           0.000     2.217    clk_counter_reg/q_reg[28]_i_1_n_4
+    SLICE_X112Y100       FDRE                                         r  clk_counter_reg/q_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.454     0.454 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.731     1.185    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.214 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.995     2.209    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y100       FDRE                                         r  clk_counter_reg/q_reg[31]/C
+                         clock pessimism             -0.253     1.956    
+    SLICE_X112Y100       FDRE (Hold_fdre_C_D)         0.134     2.090    clk_counter_reg/q_reg[31]
+  -------------------------------------------------------------------
+                         required time                         -2.090    
+                         arrival time                           2.217    
+  -------------------------------------------------------------------
+                         slack                                  0.127    
+
+Slack (MET) :             0.129ns  (arrival time - required time)
+  Source:                 clk_counter_reg/q_reg[18]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[32]/D
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK_125MHZ_FPGA rise@0.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        0.616ns  (logic 0.493ns (80.002%)  route 0.123ns (19.998%))
+  Logic Levels:           5  (CARRY4=5)
+  Clock Path Skew:        0.353ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.209ns
+    Source Clock Delay      (SCD):    1.603ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.966 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.637     1.603    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y97        FDRE                                         r  clk_counter_reg/q_reg[18]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y97        FDRE (Prop_fdre_C_Q)         0.164     1.767 r  clk_counter_reg/q_reg[18]/Q
+                         net (fo=2, routed)           0.123     1.889    clk_counter_reg/q_reg[18]
+    SLICE_X112Y97        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.156     2.045 r  clk_counter_reg/q_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.045    clk_counter_reg/q_reg[16]_i_1_n_0
+    SLICE_X112Y98        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.085 r  clk_counter_reg/q_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.085    clk_counter_reg/q_reg[20]_i_1_n_0
+    SLICE_X112Y99        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.125 r  clk_counter_reg/q_reg[24]_i_1/CO[3]
+                         net (fo=1, routed)           0.001     2.126    clk_counter_reg/q_reg[24]_i_1_n_0
+    SLICE_X112Y100       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.166 r  clk_counter_reg/q_reg[28]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.166    clk_counter_reg/q_reg[28]_i_1_n_0
+    SLICE_X112Y101       CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.053     2.219 r  clk_counter_reg/q_reg[32]_i_1/O[0]
+                         net (fo=1, routed)           0.000     2.219    clk_counter_reg/q_reg[32]_i_1_n_7
+    SLICE_X112Y101       FDRE                                         r  clk_counter_reg/q_reg[32]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.454     0.454 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.731     1.185    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.214 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.995     2.209    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y101       FDRE                                         r  clk_counter_reg/q_reg[32]/C
+                         clock pessimism             -0.253     1.956    
+    SLICE_X112Y101       FDRE (Hold_fdre_C_D)         0.134     2.090    clk_counter_reg/q_reg[32]
+  -------------------------------------------------------------------
+                         required time                         -2.090    
+                         arrival time                           2.219    
+  -------------------------------------------------------------------
+                         slack                                  0.129    
+
+Slack (MET) :             0.142ns  (arrival time - required time)
+  Source:                 clk_counter_reg/q_reg[18]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[34]/D
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK_125MHZ_FPGA rise@0.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        0.629ns  (logic 0.506ns (80.415%)  route 0.123ns (19.585%))
+  Logic Levels:           5  (CARRY4=5)
+  Clock Path Skew:        0.353ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.209ns
+    Source Clock Delay      (SCD):    1.603ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.966 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.637     1.603    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y97        FDRE                                         r  clk_counter_reg/q_reg[18]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y97        FDRE (Prop_fdre_C_Q)         0.164     1.767 r  clk_counter_reg/q_reg[18]/Q
+                         net (fo=2, routed)           0.123     1.889    clk_counter_reg/q_reg[18]
+    SLICE_X112Y97        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.156     2.045 r  clk_counter_reg/q_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.045    clk_counter_reg/q_reg[16]_i_1_n_0
+    SLICE_X112Y98        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.085 r  clk_counter_reg/q_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.085    clk_counter_reg/q_reg[20]_i_1_n_0
+    SLICE_X112Y99        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.125 r  clk_counter_reg/q_reg[24]_i_1/CO[3]
+                         net (fo=1, routed)           0.001     2.126    clk_counter_reg/q_reg[24]_i_1_n_0
+    SLICE_X112Y100       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.166 r  clk_counter_reg/q_reg[28]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.166    clk_counter_reg/q_reg[28]_i_1_n_0
+    SLICE_X112Y101       CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.066     2.232 r  clk_counter_reg/q_reg[32]_i_1/O[2]
+                         net (fo=1, routed)           0.000     2.232    clk_counter_reg/q_reg[32]_i_1_n_5
+    SLICE_X112Y101       FDRE                                         r  clk_counter_reg/q_reg[34]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.454     0.454 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.731     1.185    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.214 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.995     2.209    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y101       FDRE                                         r  clk_counter_reg/q_reg[34]/C
+                         clock pessimism             -0.253     1.956    
+    SLICE_X112Y101       FDRE (Hold_fdre_C_D)         0.134     2.090    clk_counter_reg/q_reg[34]
+  -------------------------------------------------------------------
+                         required time                         -2.090    
+                         arrival time                           2.232    
+  -------------------------------------------------------------------
+                         slack                                  0.142    
+
+Slack (MET) :             0.165ns  (arrival time - required time)
+  Source:                 clk_counter_reg/q_reg[18]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[33]/D
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK_125MHZ_FPGA rise@0.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        0.652ns  (logic 0.529ns (81.106%)  route 0.123ns (18.894%))
+  Logic Levels:           5  (CARRY4=5)
+  Clock Path Skew:        0.353ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.209ns
+    Source Clock Delay      (SCD):    1.603ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.966 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.637     1.603    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y97        FDRE                                         r  clk_counter_reg/q_reg[18]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y97        FDRE (Prop_fdre_C_Q)         0.164     1.767 r  clk_counter_reg/q_reg[18]/Q
+                         net (fo=2, routed)           0.123     1.889    clk_counter_reg/q_reg[18]
+    SLICE_X112Y97        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.156     2.045 r  clk_counter_reg/q_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.045    clk_counter_reg/q_reg[16]_i_1_n_0
+    SLICE_X112Y98        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.085 r  clk_counter_reg/q_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.085    clk_counter_reg/q_reg[20]_i_1_n_0
+    SLICE_X112Y99        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.125 r  clk_counter_reg/q_reg[24]_i_1/CO[3]
+                         net (fo=1, routed)           0.001     2.126    clk_counter_reg/q_reg[24]_i_1_n_0
+    SLICE_X112Y100       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.166 r  clk_counter_reg/q_reg[28]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.166    clk_counter_reg/q_reg[28]_i_1_n_0
+    SLICE_X112Y101       CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.089     2.255 r  clk_counter_reg/q_reg[32]_i_1/O[1]
+                         net (fo=1, routed)           0.000     2.255    clk_counter_reg/q_reg[32]_i_1_n_6
+    SLICE_X112Y101       FDRE                                         r  clk_counter_reg/q_reg[33]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.454     0.454 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.731     1.185    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.214 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.995     2.209    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y101       FDRE                                         r  clk_counter_reg/q_reg[33]/C
+                         clock pessimism             -0.253     1.956    
+    SLICE_X112Y101       FDRE (Hold_fdre_C_D)         0.134     2.090    clk_counter_reg/q_reg[33]
+  -------------------------------------------------------------------
+                         required time                         -2.090    
+                         arrival time                           2.255    
+  -------------------------------------------------------------------
+                         slack                                  0.165    
+
+Slack (MET) :             0.167ns  (arrival time - required time)
+  Source:                 clk_counter_reg/q_reg[18]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[35]/D
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK_125MHZ_FPGA rise@0.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        0.654ns  (logic 0.531ns (81.164%)  route 0.123ns (18.836%))
+  Logic Levels:           5  (CARRY4=5)
+  Clock Path Skew:        0.353ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.209ns
+    Source Clock Delay      (SCD):    1.603ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.966 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.637     1.603    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y97        FDRE                                         r  clk_counter_reg/q_reg[18]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y97        FDRE (Prop_fdre_C_Q)         0.164     1.767 r  clk_counter_reg/q_reg[18]/Q
+                         net (fo=2, routed)           0.123     1.889    clk_counter_reg/q_reg[18]
+    SLICE_X112Y97        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.156     2.045 r  clk_counter_reg/q_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.045    clk_counter_reg/q_reg[16]_i_1_n_0
+    SLICE_X112Y98        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.085 r  clk_counter_reg/q_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.085    clk_counter_reg/q_reg[20]_i_1_n_0
+    SLICE_X112Y99        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.125 r  clk_counter_reg/q_reg[24]_i_1/CO[3]
+                         net (fo=1, routed)           0.001     2.126    clk_counter_reg/q_reg[24]_i_1_n_0
+    SLICE_X112Y100       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.166 r  clk_counter_reg/q_reg[28]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.166    clk_counter_reg/q_reg[28]_i_1_n_0
+    SLICE_X112Y101       CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.091     2.257 r  clk_counter_reg/q_reg[32]_i_1/O[3]
+                         net (fo=1, routed)           0.000     2.257    clk_counter_reg/q_reg[32]_i_1_n_4
+    SLICE_X112Y101       FDRE                                         r  clk_counter_reg/q_reg[35]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.454     0.454 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.731     1.185    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.214 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.995     2.209    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y101       FDRE                                         r  clk_counter_reg/q_reg[35]/C
+                         clock pessimism             -0.253     1.956    
+    SLICE_X112Y101       FDRE (Hold_fdre_C_D)         0.134     2.090    clk_counter_reg/q_reg[35]
+  -------------------------------------------------------------------
+                         required time                         -2.090    
+                         arrival time                           2.257    
+  -------------------------------------------------------------------
+                         slack                                  0.167    
+
+Slack (MET) :             0.169ns  (arrival time - required time)
+  Source:                 clk_counter_reg/q_reg[18]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[36]/D
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK_125MHZ_FPGA rise@0.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        0.656ns  (logic 0.533ns (81.221%)  route 0.123ns (18.779%))
+  Logic Levels:           6  (CARRY4=6)
+  Clock Path Skew:        0.353ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.209ns
+    Source Clock Delay      (SCD):    1.603ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.966 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.637     1.603    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y97        FDRE                                         r  clk_counter_reg/q_reg[18]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y97        FDRE (Prop_fdre_C_Q)         0.164     1.767 r  clk_counter_reg/q_reg[18]/Q
+                         net (fo=2, routed)           0.123     1.889    clk_counter_reg/q_reg[18]
+    SLICE_X112Y97        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.156     2.045 r  clk_counter_reg/q_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.045    clk_counter_reg/q_reg[16]_i_1_n_0
+    SLICE_X112Y98        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.085 r  clk_counter_reg/q_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.085    clk_counter_reg/q_reg[20]_i_1_n_0
+    SLICE_X112Y99        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.125 r  clk_counter_reg/q_reg[24]_i_1/CO[3]
+                         net (fo=1, routed)           0.001     2.126    clk_counter_reg/q_reg[24]_i_1_n_0
+    SLICE_X112Y100       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.166 r  clk_counter_reg/q_reg[28]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.166    clk_counter_reg/q_reg[28]_i_1_n_0
+    SLICE_X112Y101       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.206 r  clk_counter_reg/q_reg[32]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.206    clk_counter_reg/q_reg[32]_i_1_n_0
+    SLICE_X112Y102       CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.053     2.259 r  clk_counter_reg/q_reg[36]_i_1/O[0]
+                         net (fo=1, routed)           0.000     2.259    clk_counter_reg/q_reg[36]_i_1_n_7
+    SLICE_X112Y102       FDRE                                         r  clk_counter_reg/q_reg[36]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.454     0.454 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.731     1.185    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.214 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.995     2.209    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y102       FDRE                                         r  clk_counter_reg/q_reg[36]/C
+                         clock pessimism             -0.253     1.956    
+    SLICE_X112Y102       FDRE (Hold_fdre_C_D)         0.134     2.090    clk_counter_reg/q_reg[36]
+  -------------------------------------------------------------------
+                         required time                         -2.090    
+                         arrival time                           2.259    
+  -------------------------------------------------------------------
+                         slack                                  0.169    
+
+Slack (MET) :             0.182ns  (arrival time - required time)
+  Source:                 clk_counter_reg/q_reg[18]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            clk_counter_reg/q_reg[38]/D
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             CLK_125MHZ_FPGA
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (CLK_125MHZ_FPGA rise@0.000ns - CLK_125MHZ_FPGA rise@0.000ns)
+  Data Path Delay:        0.669ns  (logic 0.546ns (81.586%)  route 0.123ns (18.414%))
+  Logic Levels:           6  (CARRY4=6)
+  Clock Path Skew:        0.353ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.209ns
+    Source Clock Delay      (SCD):    1.603ns
+    Clock Pessimism Removal (CPR):    0.253ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.966 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.637     1.603    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y97        FDRE                                         r  clk_counter_reg/q_reg[18]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X112Y97        FDRE (Prop_fdre_C_Q)         0.164     1.767 r  clk_counter_reg/q_reg[18]/Q
+                         net (fo=2, routed)           0.123     1.889    clk_counter_reg/q_reg[18]
+    SLICE_X112Y97        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.156     2.045 r  clk_counter_reg/q_reg[16]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.045    clk_counter_reg/q_reg[16]_i_1_n_0
+    SLICE_X112Y98        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.085 r  clk_counter_reg/q_reg[20]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.085    clk_counter_reg/q_reg[20]_i_1_n_0
+    SLICE_X112Y99        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.125 r  clk_counter_reg/q_reg[24]_i_1/CO[3]
+                         net (fo=1, routed)           0.001     2.126    clk_counter_reg/q_reg[24]_i_1_n_0
+    SLICE_X112Y100       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.166 r  clk_counter_reg/q_reg[28]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.166    clk_counter_reg/q_reg[28]_i_1_n_0
+    SLICE_X112Y101       CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     2.206 r  clk_counter_reg/q_reg[32]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.206    clk_counter_reg/q_reg[32]_i_1_n_0
+    SLICE_X112Y102       CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.066     2.272 r  clk_counter_reg/q_reg[36]_i_1/O[2]
+                         net (fo=1, routed)           0.000     2.272    clk_counter_reg/q_reg[36]_i_1_n_5
+    SLICE_X112Y102       FDRE                                         r  clk_counter_reg/q_reg[38]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.454     0.454 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.731     1.185    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.214 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.995     2.209    clk_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X112Y102       FDRE                                         r  clk_counter_reg/q_reg[38]/C
+                         clock pessimism             -0.253     1.956    
+    SLICE_X112Y102       FDRE (Hold_fdre_C_D)         0.134     2.090    clk_counter_reg/q_reg[38]
+  -------------------------------------------------------------------
+                         required time                         -2.090    
+                         arrival time                           2.272    
+  -------------------------------------------------------------------
+                         slack                                  0.182    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         CLK_125MHZ_FPGA
+Waveform(ns):       { 0.000 4.000 }
+Period(ns):         8.000
+Sources:            { CLK_125MHZ_FPGA }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I   n/a            1.592         8.000       6.408      BUFGCTRL_X0Y16  CLK_125MHZ_FPGA_IBUF_BUFG_inst/I
+Min Period        n/a     FDRE/C   n/a            1.000         8.000       7.000      SLICE_X112Y93   clk_counter_reg/q_reg[0]/C
+Min Period        n/a     FDRE/C   n/a            1.000         8.000       7.000      SLICE_X112Y95   clk_counter_reg/q_reg[10]/C
+Min Period        n/a     FDRE/C   n/a            1.000         8.000       7.000      SLICE_X112Y95   clk_counter_reg/q_reg[11]/C
+Min Period        n/a     FDRE/C   n/a            1.000         8.000       7.000      SLICE_X112Y96   clk_counter_reg/q_reg[12]/C
+Min Period        n/a     FDRE/C   n/a            1.000         8.000       7.000      SLICE_X112Y96   clk_counter_reg/q_reg[13]/C
+Min Period        n/a     FDRE/C   n/a            1.000         8.000       7.000      SLICE_X112Y96   clk_counter_reg/q_reg[14]/C
+Min Period        n/a     FDRE/C   n/a            1.000         8.000       7.000      SLICE_X112Y96   clk_counter_reg/q_reg[15]/C
+Min Period        n/a     FDRE/C   n/a            1.000         8.000       7.000      SLICE_X112Y97   clk_counter_reg/q_reg[16]/C
+Min Period        n/a     FDRE/C   n/a            1.000         8.000       7.000      SLICE_X112Y97   clk_counter_reg/q_reg[17]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y93   clk_counter_reg/q_reg[0]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y93   clk_counter_reg/q_reg[0]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y95   clk_counter_reg/q_reg[10]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y95   clk_counter_reg/q_reg[10]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y95   clk_counter_reg/q_reg[11]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y95   clk_counter_reg/q_reg[11]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y96   clk_counter_reg/q_reg[12]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y96   clk_counter_reg/q_reg[12]/C
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y96   clk_counter_reg/q_reg[13]/C
+Low Pulse Width   Fast    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y96   clk_counter_reg/q_reg[13]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y93   clk_counter_reg/q_reg[0]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y93   clk_counter_reg/q_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y95   clk_counter_reg/q_reg[10]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y95   clk_counter_reg/q_reg[10]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y95   clk_counter_reg/q_reg[11]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y95   clk_counter_reg/q_reg[11]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y96   clk_counter_reg/q_reg[12]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y96   clk_counter_reg/q_reg[12]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y96   clk_counter_reg/q_reg[13]/C
+High Pulse Width  Fast    FDRE/C   n/a            0.500         4.000       3.500      SLICE_X112Y96   clk_counter_reg/q_reg[13]/C
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  CLK_125MHZ_FPGA
+  To Clock:  
+
+Max Delay             4 Endpoints
+Min Delay             4 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 led_counter_reg/q_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            LEDS[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.881ns  (logic 3.812ns (64.822%)  route 2.069ns (35.178%))
+  Logic Levels:           2  (LUT1=1 OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.429     1.429 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.302    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     3.387 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.746     5.133    led_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X113Y103       FDRE                                         r  led_counter_reg/q_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y103       FDRE (Prop_fdre_C_Q)         0.379     5.512 f  led_counter_reg/q_reg[2]/Q
+                         net (fo=3, routed)           0.697     6.209    led_counter_reg/q_reg[2]
+    SLICE_X113Y103       LUT1 (Prop_lut1_I0_O)        0.105     6.314 r  led_counter_reg/LEDS_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           1.372     7.686    LEDS_OBUF[2]
+    M15                  OBUF (Prop_obuf_I_O)         3.328    11.015 r  LEDS_OBUF[2]_inst/O
+                         net (fo=0)                   0.000    11.015    LEDS[2]
+    M15                                                               r  LEDS[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 led_counter_reg/q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            LEDS[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.847ns  (logic 4.103ns (70.162%)  route 1.745ns (29.838%))
+  Logic Levels:           2  (LUT1=1 OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.429     1.429 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.302    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     3.387 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.746     5.133    led_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X113Y103       FDRE                                         r  led_counter_reg/q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y103       FDRE (Prop_fdre_C_Q)         0.348     5.481 f  led_counter_reg/q_reg[3]/Q
+                         net (fo=2, routed)           0.358     5.840    led_counter_reg/q_reg[3]
+    SLICE_X113Y103       LUT1 (Prop_lut1_I0_O)        0.265     6.105 r  led_counter_reg/LEDS_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           1.387     7.491    LEDS_OBUF[3]
+    M14                  OBUF (Prop_obuf_I_O)         3.490    10.981 r  LEDS_OBUF[3]_inst/O
+                         net (fo=0)                   0.000    10.981    LEDS[3]
+    M14                                                               r  LEDS[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 led_counter_reg/q_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            LEDS[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.727ns  (logic 3.950ns (68.962%)  route 1.778ns (31.038%))
+  Logic Levels:           2  (LUT1=1 OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.429     1.429 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.302    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     3.387 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.746     5.133    led_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X113Y101       FDRE                                         r  led_counter_reg/q_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y101       FDRE (Prop_fdre_C_Q)         0.379     5.512 f  led_counter_reg/q_reg[0]/Q
+                         net (fo=4, routed)           0.407     5.919    led_counter_reg/q_reg[0]
+    SLICE_X113Y101       LUT1 (Prop_lut1_I0_O)        0.124     6.043 r  led_counter_reg/LEDS_OBUF[0]_inst_i_1/O
+                         net (fo=2, routed)           1.370     7.414    LEDS_OBUF[0]
+    J16                  OBUF (Prop_obuf_I_O)         3.447    10.861 r  LEDS_OBUF[0]_inst/O
+                         net (fo=0)                   0.000    10.861    LEDS[0]
+    J16                                                               r  LEDS[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 led_counter_reg/q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            LEDS[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        5.685ns  (logic 3.757ns (66.088%)  route 1.928ns (33.912%))
+  Logic Levels:           2  (LUT1=1 OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         1.429     1.429 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           1.873     3.302    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.085     3.387 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          1.746     5.133    led_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X113Y101       FDRE                                         r  led_counter_reg/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y101       FDRE (Prop_fdre_C_Q)         0.379     5.512 f  led_counter_reg/q_reg[1]/Q
+                         net (fo=4, routed)           0.563     6.075    led_counter_reg/q_reg[1]
+    SLICE_X113Y101       LUT1 (Prop_lut1_I0_O)        0.105     6.180 r  led_counter_reg/LEDS_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           1.365     7.545    LEDS_OBUF[1]
+    K16                  OBUF (Prop_obuf_I_O)         3.273    10.818 r  LEDS_OBUF[1]_inst/O
+                         net (fo=0)                   0.000    10.818    LEDS[1]
+    K16                                                               r  LEDS[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 led_counter_reg/q_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            LEDS[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.961ns  (logic 1.468ns (74.875%)  route 0.493ns (25.125%))
+  Logic Levels:           2  (LUT1=1 OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.966 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.719     1.685    led_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X113Y101       FDRE                                         r  led_counter_reg/q_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y101       FDRE (Prop_fdre_C_Q)         0.141     1.826 f  led_counter_reg/q_reg[0]/Q
+                         net (fo=4, routed)           0.167     1.993    led_counter_reg/q_reg[0]
+    SLICE_X113Y101       LUT1 (Prop_lut1_I0_O)        0.042     2.035 r  led_counter_reg/LEDS_OBUF[0]_inst_i_1/O
+                         net (fo=2, routed)           0.325     2.361    LEDS_OBUF[0]
+    J16                  OBUF (Prop_obuf_I_O)         1.285     3.646 r  LEDS_OBUF[0]_inst/O
+                         net (fo=0)                   0.000     3.646    LEDS[0]
+    J16                                                               r  LEDS[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 led_counter_reg/q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            LEDS[1]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        1.983ns  (logic 1.414ns (71.316%)  route 0.569ns (28.684%))
+  Logic Levels:           2  (LUT1=1 OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.966 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.719     1.685    led_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X113Y101       FDRE                                         r  led_counter_reg/q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y101       FDRE (Prop_fdre_C_Q)         0.141     1.826 f  led_counter_reg/q_reg[1]/Q
+                         net (fo=4, routed)           0.241     2.067    led_counter_reg/q_reg[1]
+    SLICE_X113Y101       LUT1 (Prop_lut1_I0_O)        0.045     2.112 r  led_counter_reg/LEDS_OBUF[1]_inst_i_1/O
+                         net (fo=1, routed)           0.328     2.440    LEDS_OBUF[1]
+    K16                  OBUF (Prop_obuf_I_O)         1.228     3.669 r  LEDS_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     3.669    LEDS[1]
+    K16                                                               r  LEDS[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 led_counter_reg/q_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            LEDS[3]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.047ns  (logic 1.573ns (76.858%)  route 0.474ns (23.142%))
+  Logic Levels:           2  (LUT1=1 OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.966 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.718     1.684    led_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X113Y103       FDRE                                         r  led_counter_reg/q_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y103       FDRE (Prop_fdre_C_Q)         0.128     1.812 f  led_counter_reg/q_reg[3]/Q
+                         net (fo=2, routed)           0.151     1.963    led_counter_reg/q_reg[3]
+    SLICE_X113Y103       LUT1 (Prop_lut1_I0_O)        0.099     2.062 r  led_counter_reg/LEDS_OBUF[3]_inst_i_1/O
+                         net (fo=1, routed)           0.323     2.385    LEDS_OBUF[3]
+    M14                  OBUF (Prop_obuf_I_O)         1.346     3.731 r  LEDS_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     3.731    LEDS[3]
+    M14                                                               r  LEDS[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 led_counter_reg/q_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by CLK_125MHZ_FPGA  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            LEDS[2]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        2.074ns  (logic 1.469ns (70.834%)  route 0.605ns (29.166%))
+  Logic Levels:           2  (LUT1=1 OBUF=1)
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock CLK_125MHZ_FPGA rise edge)
+                                                      0.000     0.000 r  
+    U18                                               0.000     0.000 r  CLK_125MHZ_FPGA (IN)
+                         net (fo=0)                   0.000     0.000    CLK_125MHZ_FPGA
+    U18                  IBUF (Prop_ibuf_I_O)         0.266     0.266 r  CLK_125MHZ_FPGA_IBUF_inst/O
+                         net (fo=1, routed)           0.674     0.940    CLK_125MHZ_FPGA_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.966 r  CLK_125MHZ_FPGA_IBUF_BUFG_inst/O
+                         net (fo=68, routed)          0.718     1.684    led_counter_reg/CLK_125MHZ_FPGA
+    SLICE_X113Y103       FDRE                                         r  led_counter_reg/q_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y103       FDRE (Prop_fdre_C_Q)         0.141     1.825 f  led_counter_reg/q_reg[2]/Q
+                         net (fo=3, routed)           0.288     2.113    led_counter_reg/q_reg[2]
+    SLICE_X113Y103       LUT1 (Prop_lut1_I0_O)        0.045     2.158 r  led_counter_reg/LEDS_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           0.317     2.475    LEDS_OBUF[2]
+    M15                  OBUF (Prop_obuf_I_O)         1.283     3.758 r  LEDS_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     3.758    LEDS[2]
+    M15                                                               r  LEDS[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
