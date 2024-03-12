@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Mar 12 19:39:35 2024
+# Process ID: 1182684
+# Current directory: /home/rock/workplace/fpga_labs_sp20/lab2/proj/z1top_adder/z1top_adder.runs/synth_1
+# Command line: vivado -log z1top_adder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source z1top_adder.tcl
+# Log file: /home/rock/workplace/fpga_labs_sp20/lab2/proj/z1top_adder/z1top_adder.runs/synth_1/z1top_adder.vds
+# Journal file: /home/rock/workplace/fpga_labs_sp20/lab2/proj/z1top_adder/z1top_adder.runs/synth_1/vivado.jou
+# Running On: archlinux, OS: Linux, CPU Frequency: 3100.291 MHz, CPU Physical cores: 2, Host memory: 8202 MB
+#-----------------------------------------------------------
+source z1top_adder.tcl -notrace

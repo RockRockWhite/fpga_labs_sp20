@@ -1,11 +1,18 @@
-##LEDs
 
-set_property PACKAGE_PIN M14 [get_ports LED]
-set_property IOSTANDARD LVCMOS33 [get_ports LED]
 
-##Buttons
-
-set_property PACKAGE_PIN N15 [get_ports BUTTON_A]
-set_property PACKAGE_PIN N16 [get_ports BUTTON_B]
-set_property IOSTANDARD LVCMOS33 [get_ports BUTTON_A]
-set_property IOSTANDARD LVCMOS33 [get_ports BUTTON_B]
+set_property IOSTANDARD LVCMOS33 [get_ports {A[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {A[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {B[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {B[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {C[3]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {C[2]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {C[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {C[0]}]
+set_property PACKAGE_PIN M14 [get_ports {C[3]}]
+set_property PACKAGE_PIN M15 [get_ports {C[2]}]
+set_property PACKAGE_PIN K16 [get_ports {C[1]}]
+set_property PACKAGE_PIN J16 [get_ports {C[0]}]
+set_property PACKAGE_PIN N15 [get_ports {A[1]}]
+set_property PACKAGE_PIN N16 [get_ports {A[0]}]
+set_property PACKAGE_PIN T17 [get_ports {B[1]}]
+set_property PACKAGE_PIN R17 [get_ports {B[0]}]
