@@ -1,5 +1,5 @@
 $date
-	Thu Mar 28 17:05:37 2024
+	Thu Mar 28 17:20:42 2024
 $end
 $version
 	Icarus Verilog
@@ -16,159 +16,147 @@ $var reg 32 % operand2 [31:0] $end
 $scope module dut $end
 $var wire 32 & a [31:0] $end
 $var wire 32 ' b [31:0] $end
+$var wire 1 # clk $end
 $var wire 33 ( sum [32:0] $end
-$var parameter 32 ) N $end
+$var wire 33 ) c [32:0] $end
+$var wire 33 * adder_sum [32:0] $end
+$var parameter 32 + N $end
 $scope begin gen_adder[0] $end
-$var parameter 2 * i $end
+$var parameter 2 , i $end
 $scope module adder $end
-$var wire 1 + a $end
-$var wire 1 , a_and_b $end
-$var wire 1 - a_and_c $end
-$var wire 1 . b $end
-$var wire 1 / b_and_c $end
-$var wire 1 0 carry_in $end
-$var wire 1 1 carry_out $end
-$var wire 1 2 carry_out_temp $end
-$var wire 1 3 sum $end
-$var wire 1 4 sum_temp $end
+$var wire 1 - a $end
+$var wire 1 . a_and_b $end
+$var wire 1 / a_and_c $end
+$var wire 1 0 b $end
+$var wire 1 1 b_and_c $end
+$var wire 1 2 carry_in $end
+$var wire 1 3 carry_out $end
+$var wire 1 4 carry_out_temp $end
+$var wire 1 5 sum $end
+$var wire 1 6 sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[1] $end
-$var parameter 2 5 i $end
+$var parameter 2 7 i $end
 $scope module adder $end
-$var wire 1 6 a $end
-$var wire 1 7 a_and_b $end
-$var wire 1 8 a_and_c $end
-$var wire 1 9 b $end
-$var wire 1 : b_and_c $end
-$var wire 1 1 carry_in $end
-$var wire 1 ; carry_out $end
-$var wire 1 < carry_out_temp $end
-$var wire 1 = sum $end
-$var wire 1 > sum_temp $end
+$var wire 1 8 a $end
+$var wire 1 9 a_and_b $end
+$var wire 1 : a_and_c $end
+$var wire 1 ; b $end
+$var wire 1 < b_and_c $end
+$var wire 1 = carry_in $end
+$var wire 1 > carry_out $end
+$var wire 1 ? carry_out_temp $end
+$var wire 1 @ sum $end
+$var wire 1 A sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[2] $end
-$var parameter 3 ? i $end
+$var parameter 3 B i $end
 $scope module adder $end
-$var wire 1 @ a $end
-$var wire 1 A a_and_b $end
-$var wire 1 B a_and_c $end
-$var wire 1 C b $end
-$var wire 1 D b_and_c $end
-$var wire 1 ; carry_in $end
-$var wire 1 E carry_out $end
-$var wire 1 F carry_out_temp $end
-$var wire 1 G sum $end
-$var wire 1 H sum_temp $end
+$var wire 1 C a $end
+$var wire 1 D a_and_b $end
+$var wire 1 E a_and_c $end
+$var wire 1 F b $end
+$var wire 1 G b_and_c $end
+$var wire 1 H carry_in $end
+$var wire 1 I carry_out $end
+$var wire 1 J carry_out_temp $end
+$var wire 1 K sum $end
+$var wire 1 L sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[3] $end
-$var parameter 3 I i $end
+$var parameter 3 M i $end
 $scope module adder $end
-$var wire 1 J a $end
-$var wire 1 K a_and_b $end
-$var wire 1 L a_and_c $end
-$var wire 1 M b $end
-$var wire 1 N b_and_c $end
-$var wire 1 E carry_in $end
-$var wire 1 O carry_out $end
-$var wire 1 P carry_out_temp $end
-$var wire 1 Q sum $end
-$var wire 1 R sum_temp $end
+$var wire 1 N a $end
+$var wire 1 O a_and_b $end
+$var wire 1 P a_and_c $end
+$var wire 1 Q b $end
+$var wire 1 R b_and_c $end
+$var wire 1 S carry_in $end
+$var wire 1 T carry_out $end
+$var wire 1 U carry_out_temp $end
+$var wire 1 V sum $end
+$var wire 1 W sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[4] $end
-$var parameter 4 S i $end
+$var parameter 4 X i $end
 $scope module adder $end
-$var wire 1 T a $end
-$var wire 1 U a_and_b $end
-$var wire 1 V a_and_c $end
-$var wire 1 W b $end
-$var wire 1 X b_and_c $end
-$var wire 1 O carry_in $end
-$var wire 1 Y carry_out $end
-$var wire 1 Z carry_out_temp $end
-$var wire 1 [ sum $end
-$var wire 1 \ sum_temp $end
+$var wire 1 Y a $end
+$var wire 1 Z a_and_b $end
+$var wire 1 [ a_and_c $end
+$var wire 1 \ b $end
+$var wire 1 ] b_and_c $end
+$var wire 1 ^ carry_in $end
+$var wire 1 _ carry_out $end
+$var wire 1 ` carry_out_temp $end
+$var wire 1 a sum $end
+$var wire 1 b sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[5] $end
-$var parameter 4 ] i $end
+$var parameter 4 c i $end
 $scope module adder $end
-$var wire 1 ^ a $end
-$var wire 1 _ a_and_b $end
-$var wire 1 ` a_and_c $end
-$var wire 1 a b $end
-$var wire 1 b b_and_c $end
-$var wire 1 Y carry_in $end
-$var wire 1 c carry_out $end
-$var wire 1 d carry_out_temp $end
-$var wire 1 e sum $end
-$var wire 1 f sum_temp $end
+$var wire 1 d a $end
+$var wire 1 e a_and_b $end
+$var wire 1 f a_and_c $end
+$var wire 1 g b $end
+$var wire 1 h b_and_c $end
+$var wire 1 i carry_in $end
+$var wire 1 j carry_out $end
+$var wire 1 k carry_out_temp $end
+$var wire 1 l sum $end
+$var wire 1 m sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[6] $end
-$var parameter 4 g i $end
+$var parameter 4 n i $end
 $scope module adder $end
-$var wire 1 h a $end
-$var wire 1 i a_and_b $end
-$var wire 1 j a_and_c $end
-$var wire 1 k b $end
-$var wire 1 l b_and_c $end
-$var wire 1 c carry_in $end
-$var wire 1 m carry_out $end
-$var wire 1 n carry_out_temp $end
-$var wire 1 o sum $end
-$var wire 1 p sum_temp $end
+$var wire 1 o a $end
+$var wire 1 p a_and_b $end
+$var wire 1 q a_and_c $end
+$var wire 1 r b $end
+$var wire 1 s b_and_c $end
+$var wire 1 t carry_in $end
+$var wire 1 u carry_out $end
+$var wire 1 v carry_out_temp $end
+$var wire 1 w sum $end
+$var wire 1 x sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[7] $end
-$var parameter 4 q i $end
+$var parameter 4 y i $end
 $scope module adder $end
-$var wire 1 r a $end
-$var wire 1 s a_and_b $end
-$var wire 1 t a_and_c $end
-$var wire 1 u b $end
-$var wire 1 v b_and_c $end
-$var wire 1 m carry_in $end
-$var wire 1 w carry_out $end
-$var wire 1 x carry_out_temp $end
-$var wire 1 y sum $end
-$var wire 1 z sum_temp $end
+$var wire 1 z a $end
+$var wire 1 { a_and_b $end
+$var wire 1 | a_and_c $end
+$var wire 1 } b $end
+$var wire 1 ~ b_and_c $end
+$var wire 1 !" carry_in $end
+$var wire 1 "" carry_out $end
+$var wire 1 #" carry_out_temp $end
+$var wire 1 $" sum $end
+$var wire 1 %" sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[8] $end
-$var parameter 5 { i $end
+$var parameter 5 &" i $end
 $scope module adder $end
-$var wire 1 | a $end
-$var wire 1 } a_and_b $end
-$var wire 1 ~ a_and_c $end
-$var wire 1 !" b $end
-$var wire 1 "" b_and_c $end
-$var wire 1 w carry_in $end
-$var wire 1 #" carry_out $end
-$var wire 1 $" carry_out_temp $end
-$var wire 1 %" sum $end
-$var wire 1 &" sum_temp $end
-$upscope $end
-$upscope $end
-$scope begin gen_adder[9] $end
-$var parameter 5 '" i $end
-$scope module adder $end
-$var wire 1 (" a $end
-$var wire 1 )" a_and_b $end
-$var wire 1 *" a_and_c $end
-$var wire 1 +" b $end
-$var wire 1 ," b_and_c $end
-$var wire 1 #" carry_in $end
+$var wire 1 '" a $end
+$var wire 1 (" a_and_b $end
+$var wire 1 )" a_and_c $end
+$var wire 1 *" b $end
+$var wire 1 +" b_and_c $end
+$var wire 1 ," carry_in $end
 $var wire 1 -" carry_out $end
 $var wire 1 ." carry_out_temp $end
 $var wire 1 /" sum $end
 $var wire 1 0" sum_temp $end
 $upscope $end
 $upscope $end
-$scope begin gen_adder[10] $end
+$scope begin gen_adder[9] $end
 $var parameter 5 1" i $end
 $scope module adder $end
 $var wire 1 2" a $end
@@ -176,164 +164,149 @@ $var wire 1 3" a_and_b $end
 $var wire 1 4" a_and_c $end
 $var wire 1 5" b $end
 $var wire 1 6" b_and_c $end
-$var wire 1 -" carry_in $end
-$var wire 1 7" carry_out $end
-$var wire 1 8" carry_out_temp $end
-$var wire 1 9" sum $end
-$var wire 1 :" sum_temp $end
+$var wire 1 7" carry_in $end
+$var wire 1 8" carry_out $end
+$var wire 1 9" carry_out_temp $end
+$var wire 1 :" sum $end
+$var wire 1 ;" sum_temp $end
+$upscope $end
+$upscope $end
+$scope begin gen_adder[10] $end
+$var parameter 5 <" i $end
+$scope module adder $end
+$var wire 1 =" a $end
+$var wire 1 >" a_and_b $end
+$var wire 1 ?" a_and_c $end
+$var wire 1 @" b $end
+$var wire 1 A" b_and_c $end
+$var wire 1 B" carry_in $end
+$var wire 1 C" carry_out $end
+$var wire 1 D" carry_out_temp $end
+$var wire 1 E" sum $end
+$var wire 1 F" sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[11] $end
-$var parameter 5 ;" i $end
+$var parameter 5 G" i $end
 $scope module adder $end
-$var wire 1 <" a $end
-$var wire 1 =" a_and_b $end
-$var wire 1 >" a_and_c $end
-$var wire 1 ?" b $end
-$var wire 1 @" b_and_c $end
-$var wire 1 7" carry_in $end
-$var wire 1 A" carry_out $end
-$var wire 1 B" carry_out_temp $end
-$var wire 1 C" sum $end
-$var wire 1 D" sum_temp $end
+$var wire 1 H" a $end
+$var wire 1 I" a_and_b $end
+$var wire 1 J" a_and_c $end
+$var wire 1 K" b $end
+$var wire 1 L" b_and_c $end
+$var wire 1 M" carry_in $end
+$var wire 1 N" carry_out $end
+$var wire 1 O" carry_out_temp $end
+$var wire 1 P" sum $end
+$var wire 1 Q" sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[12] $end
-$var parameter 5 E" i $end
+$var parameter 5 R" i $end
 $scope module adder $end
-$var wire 1 F" a $end
-$var wire 1 G" a_and_b $end
-$var wire 1 H" a_and_c $end
-$var wire 1 I" b $end
-$var wire 1 J" b_and_c $end
-$var wire 1 A" carry_in $end
-$var wire 1 K" carry_out $end
-$var wire 1 L" carry_out_temp $end
-$var wire 1 M" sum $end
-$var wire 1 N" sum_temp $end
+$var wire 1 S" a $end
+$var wire 1 T" a_and_b $end
+$var wire 1 U" a_and_c $end
+$var wire 1 V" b $end
+$var wire 1 W" b_and_c $end
+$var wire 1 X" carry_in $end
+$var wire 1 Y" carry_out $end
+$var wire 1 Z" carry_out_temp $end
+$var wire 1 [" sum $end
+$var wire 1 \" sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[13] $end
-$var parameter 5 O" i $end
+$var parameter 5 ]" i $end
 $scope module adder $end
-$var wire 1 P" a $end
-$var wire 1 Q" a_and_b $end
-$var wire 1 R" a_and_c $end
-$var wire 1 S" b $end
-$var wire 1 T" b_and_c $end
-$var wire 1 K" carry_in $end
-$var wire 1 U" carry_out $end
-$var wire 1 V" carry_out_temp $end
-$var wire 1 W" sum $end
-$var wire 1 X" sum_temp $end
+$var wire 1 ^" a $end
+$var wire 1 _" a_and_b $end
+$var wire 1 `" a_and_c $end
+$var wire 1 a" b $end
+$var wire 1 b" b_and_c $end
+$var wire 1 c" carry_in $end
+$var wire 1 d" carry_out $end
+$var wire 1 e" carry_out_temp $end
+$var wire 1 f" sum $end
+$var wire 1 g" sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[14] $end
-$var parameter 5 Y" i $end
+$var parameter 5 h" i $end
 $scope module adder $end
-$var wire 1 Z" a $end
-$var wire 1 [" a_and_b $end
-$var wire 1 \" a_and_c $end
-$var wire 1 ]" b $end
-$var wire 1 ^" b_and_c $end
-$var wire 1 U" carry_in $end
-$var wire 1 _" carry_out $end
-$var wire 1 `" carry_out_temp $end
-$var wire 1 a" sum $end
-$var wire 1 b" sum_temp $end
+$var wire 1 i" a $end
+$var wire 1 j" a_and_b $end
+$var wire 1 k" a_and_c $end
+$var wire 1 l" b $end
+$var wire 1 m" b_and_c $end
+$var wire 1 n" carry_in $end
+$var wire 1 o" carry_out $end
+$var wire 1 p" carry_out_temp $end
+$var wire 1 q" sum $end
+$var wire 1 r" sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[15] $end
-$var parameter 5 c" i $end
+$var parameter 5 s" i $end
 $scope module adder $end
-$var wire 1 d" a $end
-$var wire 1 e" a_and_b $end
-$var wire 1 f" a_and_c $end
-$var wire 1 g" b $end
-$var wire 1 h" b_and_c $end
-$var wire 1 _" carry_in $end
-$var wire 1 i" carry_out $end
-$var wire 1 j" carry_out_temp $end
-$var wire 1 k" sum $end
-$var wire 1 l" sum_temp $end
+$var wire 1 t" a $end
+$var wire 1 u" a_and_b $end
+$var wire 1 v" a_and_c $end
+$var wire 1 w" b $end
+$var wire 1 x" b_and_c $end
+$var wire 1 y" carry_in $end
+$var wire 1 z" carry_out $end
+$var wire 1 {" carry_out_temp $end
+$var wire 1 |" sum $end
+$var wire 1 }" sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[16] $end
-$var parameter 6 m" i $end
+$var parameter 6 ~" i $end
 $scope module adder $end
-$var wire 1 n" a $end
-$var wire 1 o" a_and_b $end
-$var wire 1 p" a_and_c $end
-$var wire 1 q" b $end
-$var wire 1 r" b_and_c $end
-$var wire 1 i" carry_in $end
-$var wire 1 s" carry_out $end
-$var wire 1 t" carry_out_temp $end
-$var wire 1 u" sum $end
-$var wire 1 v" sum_temp $end
+$var wire 1 !# a $end
+$var wire 1 "# a_and_b $end
+$var wire 1 ## a_and_c $end
+$var wire 1 $# b $end
+$var wire 1 %# b_and_c $end
+$var wire 1 &# carry_in $end
+$var wire 1 '# carry_out $end
+$var wire 1 (# carry_out_temp $end
+$var wire 1 )# sum $end
+$var wire 1 *# sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[17] $end
-$var parameter 6 w" i $end
+$var parameter 6 +# i $end
 $scope module adder $end
-$var wire 1 x" a $end
-$var wire 1 y" a_and_b $end
-$var wire 1 z" a_and_c $end
-$var wire 1 {" b $end
-$var wire 1 |" b_and_c $end
-$var wire 1 s" carry_in $end
-$var wire 1 }" carry_out $end
-$var wire 1 ~" carry_out_temp $end
-$var wire 1 !# sum $end
-$var wire 1 "# sum_temp $end
+$var wire 1 ,# a $end
+$var wire 1 -# a_and_b $end
+$var wire 1 .# a_and_c $end
+$var wire 1 /# b $end
+$var wire 1 0# b_and_c $end
+$var wire 1 1# carry_in $end
+$var wire 1 2# carry_out $end
+$var wire 1 3# carry_out_temp $end
+$var wire 1 4# sum $end
+$var wire 1 5# sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[18] $end
-$var parameter 6 ## i $end
+$var parameter 6 6# i $end
 $scope module adder $end
-$var wire 1 $# a $end
-$var wire 1 %# a_and_b $end
-$var wire 1 &# a_and_c $end
-$var wire 1 '# b $end
-$var wire 1 (# b_and_c $end
-$var wire 1 }" carry_in $end
-$var wire 1 )# carry_out $end
-$var wire 1 *# carry_out_temp $end
-$var wire 1 +# sum $end
-$var wire 1 ,# sum_temp $end
-$upscope $end
-$upscope $end
-$scope begin gen_adder[19] $end
-$var parameter 6 -# i $end
-$scope module adder $end
-$var wire 1 .# a $end
-$var wire 1 /# a_and_b $end
-$var wire 1 0# a_and_c $end
-$var wire 1 1# b $end
-$var wire 1 2# b_and_c $end
-$var wire 1 )# carry_in $end
-$var wire 1 3# carry_out $end
-$var wire 1 4# carry_out_temp $end
-$var wire 1 5# sum $end
-$var wire 1 6# sum_temp $end
-$upscope $end
-$upscope $end
-$scope begin gen_adder[20] $end
-$var parameter 6 7# i $end
-$scope module adder $end
-$var wire 1 8# a $end
-$var wire 1 9# a_and_b $end
-$var wire 1 :# a_and_c $end
-$var wire 1 ;# b $end
-$var wire 1 <# b_and_c $end
-$var wire 1 3# carry_in $end
+$var wire 1 7# a $end
+$var wire 1 8# a_and_b $end
+$var wire 1 9# a_and_c $end
+$var wire 1 :# b $end
+$var wire 1 ;# b_and_c $end
+$var wire 1 <# carry_in $end
 $var wire 1 =# carry_out $end
 $var wire 1 ># carry_out_temp $end
 $var wire 1 ?# sum $end
 $var wire 1 @# sum_temp $end
 $upscope $end
 $upscope $end
-$scope begin gen_adder[21] $end
+$scope begin gen_adder[19] $end
 $var parameter 6 A# i $end
 $scope module adder $end
 $var wire 1 B# a $end
@@ -341,205 +314,274 @@ $var wire 1 C# a_and_b $end
 $var wire 1 D# a_and_c $end
 $var wire 1 E# b $end
 $var wire 1 F# b_and_c $end
-$var wire 1 =# carry_in $end
-$var wire 1 G# carry_out $end
-$var wire 1 H# carry_out_temp $end
-$var wire 1 I# sum $end
-$var wire 1 J# sum_temp $end
+$var wire 1 G# carry_in $end
+$var wire 1 H# carry_out $end
+$var wire 1 I# carry_out_temp $end
+$var wire 1 J# sum $end
+$var wire 1 K# sum_temp $end
+$upscope $end
+$upscope $end
+$scope begin gen_adder[20] $end
+$var parameter 6 L# i $end
+$scope module adder $end
+$var wire 1 M# a $end
+$var wire 1 N# a_and_b $end
+$var wire 1 O# a_and_c $end
+$var wire 1 P# b $end
+$var wire 1 Q# b_and_c $end
+$var wire 1 R# carry_in $end
+$var wire 1 S# carry_out $end
+$var wire 1 T# carry_out_temp $end
+$var wire 1 U# sum $end
+$var wire 1 V# sum_temp $end
+$upscope $end
+$upscope $end
+$scope begin gen_adder[21] $end
+$var parameter 6 W# i $end
+$scope module adder $end
+$var wire 1 X# a $end
+$var wire 1 Y# a_and_b $end
+$var wire 1 Z# a_and_c $end
+$var wire 1 [# b $end
+$var wire 1 \# b_and_c $end
+$var wire 1 ]# carry_in $end
+$var wire 1 ^# carry_out $end
+$var wire 1 _# carry_out_temp $end
+$var wire 1 `# sum $end
+$var wire 1 a# sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[22] $end
-$var parameter 6 K# i $end
+$var parameter 6 b# i $end
 $scope module adder $end
-$var wire 1 L# a $end
-$var wire 1 M# a_and_b $end
-$var wire 1 N# a_and_c $end
-$var wire 1 O# b $end
-$var wire 1 P# b_and_c $end
-$var wire 1 G# carry_in $end
-$var wire 1 Q# carry_out $end
-$var wire 1 R# carry_out_temp $end
-$var wire 1 S# sum $end
-$var wire 1 T# sum_temp $end
+$var wire 1 c# a $end
+$var wire 1 d# a_and_b $end
+$var wire 1 e# a_and_c $end
+$var wire 1 f# b $end
+$var wire 1 g# b_and_c $end
+$var wire 1 h# carry_in $end
+$var wire 1 i# carry_out $end
+$var wire 1 j# carry_out_temp $end
+$var wire 1 k# sum $end
+$var wire 1 l# sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[23] $end
-$var parameter 6 U# i $end
+$var parameter 6 m# i $end
 $scope module adder $end
-$var wire 1 V# a $end
-$var wire 1 W# a_and_b $end
-$var wire 1 X# a_and_c $end
-$var wire 1 Y# b $end
-$var wire 1 Z# b_and_c $end
-$var wire 1 Q# carry_in $end
-$var wire 1 [# carry_out $end
-$var wire 1 \# carry_out_temp $end
-$var wire 1 ]# sum $end
-$var wire 1 ^# sum_temp $end
+$var wire 1 n# a $end
+$var wire 1 o# a_and_b $end
+$var wire 1 p# a_and_c $end
+$var wire 1 q# b $end
+$var wire 1 r# b_and_c $end
+$var wire 1 s# carry_in $end
+$var wire 1 t# carry_out $end
+$var wire 1 u# carry_out_temp $end
+$var wire 1 v# sum $end
+$var wire 1 w# sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[24] $end
-$var parameter 6 _# i $end
+$var parameter 6 x# i $end
 $scope module adder $end
-$var wire 1 `# a $end
-$var wire 1 a# a_and_b $end
-$var wire 1 b# a_and_c $end
-$var wire 1 c# b $end
-$var wire 1 d# b_and_c $end
-$var wire 1 [# carry_in $end
-$var wire 1 e# carry_out $end
-$var wire 1 f# carry_out_temp $end
-$var wire 1 g# sum $end
-$var wire 1 h# sum_temp $end
+$var wire 1 y# a $end
+$var wire 1 z# a_and_b $end
+$var wire 1 {# a_and_c $end
+$var wire 1 |# b $end
+$var wire 1 }# b_and_c $end
+$var wire 1 ~# carry_in $end
+$var wire 1 !$ carry_out $end
+$var wire 1 "$ carry_out_temp $end
+$var wire 1 #$ sum $end
+$var wire 1 $$ sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[25] $end
-$var parameter 6 i# i $end
+$var parameter 6 %$ i $end
 $scope module adder $end
-$var wire 1 j# a $end
-$var wire 1 k# a_and_b $end
-$var wire 1 l# a_and_c $end
-$var wire 1 m# b $end
-$var wire 1 n# b_and_c $end
-$var wire 1 e# carry_in $end
-$var wire 1 o# carry_out $end
-$var wire 1 p# carry_out_temp $end
-$var wire 1 q# sum $end
-$var wire 1 r# sum_temp $end
+$var wire 1 &$ a $end
+$var wire 1 '$ a_and_b $end
+$var wire 1 ($ a_and_c $end
+$var wire 1 )$ b $end
+$var wire 1 *$ b_and_c $end
+$var wire 1 +$ carry_in $end
+$var wire 1 ,$ carry_out $end
+$var wire 1 -$ carry_out_temp $end
+$var wire 1 .$ sum $end
+$var wire 1 /$ sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[26] $end
-$var parameter 6 s# i $end
+$var parameter 6 0$ i $end
 $scope module adder $end
-$var wire 1 t# a $end
-$var wire 1 u# a_and_b $end
-$var wire 1 v# a_and_c $end
-$var wire 1 w# b $end
-$var wire 1 x# b_and_c $end
-$var wire 1 o# carry_in $end
-$var wire 1 y# carry_out $end
-$var wire 1 z# carry_out_temp $end
-$var wire 1 {# sum $end
-$var wire 1 |# sum_temp $end
+$var wire 1 1$ a $end
+$var wire 1 2$ a_and_b $end
+$var wire 1 3$ a_and_c $end
+$var wire 1 4$ b $end
+$var wire 1 5$ b_and_c $end
+$var wire 1 6$ carry_in $end
+$var wire 1 7$ carry_out $end
+$var wire 1 8$ carry_out_temp $end
+$var wire 1 9$ sum $end
+$var wire 1 :$ sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[27] $end
-$var parameter 6 }# i $end
+$var parameter 6 ;$ i $end
 $scope module adder $end
-$var wire 1 ~# a $end
-$var wire 1 !$ a_and_b $end
-$var wire 1 "$ a_and_c $end
-$var wire 1 #$ b $end
-$var wire 1 $$ b_and_c $end
-$var wire 1 y# carry_in $end
-$var wire 1 %$ carry_out $end
-$var wire 1 &$ carry_out_temp $end
-$var wire 1 '$ sum $end
-$var wire 1 ($ sum_temp $end
+$var wire 1 <$ a $end
+$var wire 1 =$ a_and_b $end
+$var wire 1 >$ a_and_c $end
+$var wire 1 ?$ b $end
+$var wire 1 @$ b_and_c $end
+$var wire 1 A$ carry_in $end
+$var wire 1 B$ carry_out $end
+$var wire 1 C$ carry_out_temp $end
+$var wire 1 D$ sum $end
+$var wire 1 E$ sum_temp $end
 $upscope $end
 $upscope $end
 $scope begin gen_adder[28] $end
-$var parameter 6 )$ i $end
+$var parameter 6 F$ i $end
 $scope module adder $end
-$var wire 1 *$ a $end
-$var wire 1 +$ a_and_b $end
-$var wire 1 ,$ a_and_c $end
-$var wire 1 -$ b $end
-$var wire 1 .$ b_and_c $end
-$var wire 1 %$ carry_in $end
-$var wire 1 /$ carry_out $end
-$var wire 1 0$ carry_out_temp $end
-$var wire 1 1$ sum $end
-$var wire 1 2$ sum_temp $end
-$upscope $end
-$upscope $end
-$scope begin gen_adder[29] $end
-$var parameter 6 3$ i $end
-$scope module adder $end
-$var wire 1 4$ a $end
-$var wire 1 5$ a_and_b $end
-$var wire 1 6$ a_and_c $end
-$var wire 1 7$ b $end
-$var wire 1 8$ b_and_c $end
-$var wire 1 /$ carry_in $end
-$var wire 1 9$ carry_out $end
-$var wire 1 :$ carry_out_temp $end
-$var wire 1 ;$ sum $end
-$var wire 1 <$ sum_temp $end
-$upscope $end
-$upscope $end
-$scope begin gen_adder[30] $end
-$var parameter 6 =$ i $end
-$scope module adder $end
-$var wire 1 >$ a $end
-$var wire 1 ?$ a_and_b $end
-$var wire 1 @$ a_and_c $end
-$var wire 1 A$ b $end
-$var wire 1 B$ b_and_c $end
-$var wire 1 9$ carry_in $end
-$var wire 1 C$ carry_out $end
-$var wire 1 D$ carry_out_temp $end
-$var wire 1 E$ sum $end
-$var wire 1 F$ sum_temp $end
-$upscope $end
-$upscope $end
-$scope begin gen_adder[31] $end
-$var parameter 6 G$ i $end
-$scope module adder $end
-$var wire 1 H$ a $end
-$var wire 1 I$ a_and_b $end
-$var wire 1 J$ a_and_c $end
-$var wire 1 K$ b $end
-$var wire 1 L$ b_and_c $end
-$var wire 1 C$ carry_in $end
+$var wire 1 G$ a $end
+$var wire 1 H$ a_and_b $end
+$var wire 1 I$ a_and_c $end
+$var wire 1 J$ b $end
+$var wire 1 K$ b_and_c $end
+$var wire 1 L$ carry_in $end
 $var wire 1 M$ carry_out $end
 $var wire 1 N$ carry_out_temp $end
 $var wire 1 O$ sum $end
 $var wire 1 P$ sum_temp $end
 $upscope $end
 $upscope $end
+$scope begin gen_adder[29] $end
+$var parameter 6 Q$ i $end
+$scope module adder $end
+$var wire 1 R$ a $end
+$var wire 1 S$ a_and_b $end
+$var wire 1 T$ a_and_c $end
+$var wire 1 U$ b $end
+$var wire 1 V$ b_and_c $end
+$var wire 1 W$ carry_in $end
+$var wire 1 X$ carry_out $end
+$var wire 1 Y$ carry_out_temp $end
+$var wire 1 Z$ sum $end
+$var wire 1 [$ sum_temp $end
+$upscope $end
+$upscope $end
+$scope begin gen_adder[30] $end
+$var parameter 6 \$ i $end
+$scope module adder $end
+$var wire 1 ]$ a $end
+$var wire 1 ^$ a_and_b $end
+$var wire 1 _$ a_and_c $end
+$var wire 1 `$ b $end
+$var wire 1 a$ b_and_c $end
+$var wire 1 b$ carry_in $end
+$var wire 1 c$ carry_out $end
+$var wire 1 d$ carry_out_temp $end
+$var wire 1 e$ sum $end
+$var wire 1 f$ sum_temp $end
+$upscope $end
+$upscope $end
+$scope begin gen_adder[31] $end
+$var parameter 6 g$ i $end
+$scope module adder $end
+$var wire 1 h$ a $end
+$var wire 1 i$ a_and_b $end
+$var wire 1 j$ a_and_c $end
+$var wire 1 k$ b $end
+$var wire 1 l$ b_and_c $end
+$var wire 1 m$ carry_in $end
+$var wire 1 n$ carry_out $end
+$var wire 1 o$ carry_out_temp $end
+$var wire 1 p$ sum $end
+$var wire 1 q$ sum_temp $end
+$upscope $end
+$upscope $end
+$scope module sum_reg $end
+$var wire 1 # clk $end
+$var wire 33 r$ d [32:0] $end
+$var parameter 33 s$ N $end
+$var reg 33 t$ q [32:0] $end
+$upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 $comment Show the parameter values. $end
 $dumpall
-b11111 G$
-b11110 =$
-b11101 3$
-b11100 )$
-b11011 }#
-b11010 s#
-b11001 i#
-b11000 _#
-b10111 U#
-b10110 K#
-b10101 A#
-b10100 7#
-b10011 -#
-b10010 ##
-b10001 w"
-b10000 m"
-b1111 c"
-b1110 Y"
-b1101 O"
-b1100 E"
-b1011 ;"
-b1010 1"
-b1001 '"
-b1000 {
-b111 q
-b110 g
-b101 ]
-b100 S
-b11 I
-b10 ?
-b1 5
-b0 *
-b100000 )
+b100001 s$
+b11111 g$
+b11110 \$
+b11101 Q$
+b11100 F$
+b11011 ;$
+b11010 0$
+b11001 %$
+b11000 x#
+b10111 m#
+b10110 b#
+b10101 W#
+b10100 L#
+b10011 A#
+b10010 6#
+b10001 +#
+b10000 ~"
+b1111 s"
+b1110 h"
+b1101 ]"
+b1100 R"
+b1011 G"
+b1010 <"
+b1001 1"
+b1000 &"
+b111 y
+b110 n
+b101 c
+b100 X
+b11 M
+b10 B
+b1 7
+b0 ,
+b100000 +
 b100000 "
 $end
 #0
 $dumpvars
+b0 t$
+b11111010000 r$
+0q$
+0p$
+0o$
+0n$
+0m$
+0l$
+0k$
+0j$
+0i$
+0h$
+0f$
+0e$
+0d$
+0c$
+0b$
+0a$
+0`$
+0_$
+0^$
+0]$
+0[$
+0Z$
+0Y$
+0X$
+0W$
+0V$
+0U$
+0T$
+0S$
+0R$
 0P$
 0O$
 0N$
@@ -549,7 +591,7 @@ $dumpvars
 0J$
 0I$
 0H$
-0F$
+0G$
 0E$
 0D$
 0C$
@@ -558,8 +600,8 @@ $dumpvars
 0@$
 0?$
 0>$
+0=$
 0<$
-0;$
 0:$
 09$
 08$
@@ -567,51 +609,52 @@ $dumpvars
 06$
 05$
 04$
+03$
 02$
 01$
-00$
 0/$
 0.$
 0-$
 0,$
 0+$
 0*$
+0)$
 0($
 0'$
 0&$
-0%$
 0$$
 0#$
 0"$
 0!$
 0~#
+0}#
 0|#
 0{#
 0z#
 0y#
-0x#
 0w#
 0v#
 0u#
 0t#
+0s#
 0r#
 0q#
 0p#
 0o#
 0n#
-0m#
 0l#
 0k#
 0j#
+0i#
 0h#
 0g#
 0f#
 0e#
 0d#
 0c#
-0b#
 0a#
 0`#
+0_#
 0^#
 0]#
 0\#
@@ -619,8 +662,8 @@ $dumpvars
 0Z#
 0Y#
 0X#
-0W#
 0V#
+0U#
 0T#
 0S#
 0R#
@@ -629,7 +672,7 @@ $dumpvars
 0O#
 0N#
 0M#
-0L#
+0K#
 0J#
 0I#
 0H#
@@ -648,7 +691,7 @@ $dumpvars
 0:#
 09#
 08#
-06#
+07#
 05#
 04#
 03#
@@ -657,8 +700,8 @@ $dumpvars
 00#
 0/#
 0.#
+0-#
 0,#
-0+#
 0*#
 0)#
 0(#
@@ -666,51 +709,52 @@ $dumpvars
 0&#
 0%#
 0$#
+0##
 0"#
 0!#
-0~"
 0}"
 0|"
 0{"
 0z"
 0y"
 0x"
+0w"
 0v"
 0u"
 0t"
-0s"
 0r"
 0q"
 0p"
 0o"
 0n"
+0m"
 0l"
 0k"
 0j"
 0i"
-0h"
 0g"
 0f"
 0e"
 0d"
+0c"
 0b"
 0a"
 0`"
 0_"
 0^"
-0]"
 0\"
 0["
 0Z"
+0Y"
 0X"
 0W"
 0V"
 0U"
 0T"
 0S"
-0R"
 0Q"
 0P"
+0O"
 0N"
 0M"
 0L"
@@ -718,26 +762,26 @@ $dumpvars
 0J"
 0I"
 0H"
-0G"
 0F"
+1E"
 0D"
 0C"
-0B"
+1B"
 0A"
 0@"
 0?"
 0>"
 0="
-0<"
-0:"
+0;"
+1:"
 19"
-08"
-07"
-06"
-05"
-04"
-03"
-02"
+18"
+17"
+16"
+15"
+14"
+13"
+12"
 00"
 1/"
 1."
@@ -747,8 +791,8 @@ $dumpvars
 1*"
 1)"
 1("
-0&"
-1%"
+1'"
+0%"
 1$"
 1#"
 1""
@@ -756,60 +800,61 @@ $dumpvars
 1~
 1}
 1|
-0z
-1y
-1x
+1{
+1z
+0x
 1w
 1v
 1u
 1t
 1s
 1r
-0p
+1q
+1p
 1o
-1n
-1m
-1l
+0m
+0l
 1k
 1j
-1i
-1h
+0i
+0h
+1g
 0f
-0e
+1e
 1d
-1c
 0b
 1a
 0`
-1_
+0_
 1^
+0]
 0\
-1[
+0[
 0Z
 0Y
-0X
 0W
 0V
-0U
-0T
+1U
+1T
+0S
 0R
-0Q
-1P
+1Q
+0P
 1O
-0N
-1M
+1N
 0L
-1K
-1J
+0K
+0J
+0I
 0H
 0G
 0F
 0E
 0D
 0C
-0B
 0A
 0@
+0?
 0>
 0=
 0<
@@ -817,8 +862,8 @@ $dumpvars
 0:
 09
 08
-07
 06
+05
 04
 03
 02
@@ -827,17 +872,20 @@ $dumpvars
 0/
 0.
 0-
-0,
-0+
-b11111010000 (
+b11111010000 *
+b11111010000 )
+b0 (
 b1111101000 '
 b1111101000 &
 b1111101000 %
 b1111101000 $
 0#
-b11111010000 !
+b0 !
 $end
 #4
+b11111010000 !
+b11111010000 (
+b11111010000 t$
 1#
 #8
 0#
@@ -886,38 +934,46 @@ $end
 #96
 0#
 #100
-1#
-0b
-0j
-0l
-0o
-1C"
-0O
-0Y
-0c
-17"
-0P
-1Q
-0Z
-1[
-0d
-1e
-18"
 b101110111000 !
 b101110111000 (
-09"
-0K
-1R
-0V
-1\
-0_
-1f
-14"
-1:"
-0J
-1T
+b101110111000 t$
+1#
+0h
+0q
+0s
+0w
+1P"
 0^
-12"
+0i
+0t
+1M"
+0T
+0_
+0j
+b111110000000 )
+1C"
+0U
+1V
+0`
+1a
+0k
+1l
+1D"
+b101110111000 *
+b101110111000 r$
+0E"
+0O
+1W
+0[
+1b
+0e
+1m
+1?"
+1F"
+0N
+1Y
+0d
+1="
 b11111010000 $
 b11111010000 &
 #104
@@ -1070,36 +1126,44 @@ b11111010000 &
 1#
 #400
 0#
-1j
-1c
-1b
-0e
+1q
 1t
+1j
+1h
+0l
+1|
+1~
+1$"
+1i
+1!"
+1["
+1_
+1u
+1X"
+1`
+0a
 1v
-1y
-1Y
-1m
-1M"
+0w
+b1111111100000 )
+1N"
+b1001110001000 *
+b1001110001000 r$
+0P"
 1Z
-0[
-1n
-0o
-1A"
-b1001110001000 !
-b1001110001000 (
-0C"
-1U
-0\
-0i
-1p
-1@"
-1D"
-1W
-0k
-1?"
+0b
+0p
+1x
+1L"
+1Q"
+1\
+0r
+1K"
 b101110111000 %
 b101110111000 '
 #404
+b1001110001000 !
+b1001110001000 (
+b1001110001000 t$
 1#
 #408
 0#
