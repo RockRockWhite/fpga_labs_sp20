@@ -1,3 +1,4 @@
+`include "../src/structural_adder.v"
 `timescale 1ns/1ns
 
 module structural_adder_tb();
@@ -17,6 +18,8 @@ module structural_adder_tb();
     );
 
     initial begin
+        $dumpfile("structural_adder_tb.vcd");        
+        $dumpvars(0, structural_adder_tb);    
         #0;
         operand1 = 32'd1000;
         operand2 = 32'd1000;
