@@ -1,7 +1,7 @@
 SIM = ./sim
 SRC = ./src
 LIB = ../lib
-DISPLAY = :1.0
+DISPLAY = :0.0
 
 .PHONY: sim
 sim: $(SIM)/$(NAME).v
